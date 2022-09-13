@@ -7,7 +7,7 @@ export const Register = () => {
     <div className="formContainer">
       <div className="formWrapper">
         <span className="logo">T-chat</span>
-        <span className="pageTitle">register</span>
+        <span className="pageTitle">Register</span>
         <form className="loginForm">
           <input type="text" placeholder="name" />
           <input type="email" placeholder="email" />
