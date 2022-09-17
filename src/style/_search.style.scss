@@ -1,0 +1,42 @@
+.search {
+    padding: 10px;
+
+    input {
+        background-color: rgb(93, 93, 186);
+        border: none;
+        border-bottom: 1px solid rgba(242, 242, 245, 0.41);
+        width: 100%;
+        padding: 10px;
+        
+
+
+        &::placeholder {
+        color: rgba(255, 255, 255, 0.53);
+        }
+    }
+
+    .userList {
+        display: flex;
+        flex-direction: column;
+
+        .user {
+            display: flex;
+            padding: 10px 5px;
+
+            &__img {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 15px;
+            }
+
+
+            p {
+             color: rgba(255, 255, 255, 0.588);
+               
+            }
+        }
+
+    }
+}
