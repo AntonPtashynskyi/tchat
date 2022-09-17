@@ -1,0 +1,10 @@
+.chat {
+  //width: 70%;
+  flex: 2;
+  padding: 10px;
+  background-color: rgb(83, 133, 226);
+
+  @media screen and (max-width: 500px) {
+    flex: 1;
+  }
+}

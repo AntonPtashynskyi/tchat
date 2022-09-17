@@ -1,5 +1,5 @@
 import React from "react";
-import "./pageStyle.scss";
+import "../style/base.style.scss";
 import Add from "../media/img/upoload.png";
 
 export const Register = () => {
@@ -22,7 +22,10 @@ export const Register = () => {
           </button>
         </form>
         <p>
-          You do have an account? <span>Log In</span>
+          You do have an account?{" "}
+          <span>
+            <a href="./Login.jsx">Log In</a>
+          </span>
         </p>
       </div>
     </div>

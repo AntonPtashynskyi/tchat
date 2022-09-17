@@ -1,5 +1,5 @@
 import React from "react";
-import "./pageStyle.scss";
+import "../style/base.style.scss";
 
 export const Login = () => {
   return (
