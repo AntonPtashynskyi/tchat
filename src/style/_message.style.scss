@@ -1,0 +1,39 @@
+.message {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 0 20px;
+
+  .messageInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  .messageContent {
+    align-self: baseline;
+  }
+
+  &__img {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    height: 40px;
+
+    font-weight: 500;
+    padding: 2px 10px;
+    background-color: #fff;
+    color: rgb(50, 49, 49);
+    border-radius: 0 10px 10px 10px;
+  }
+
+  span {
+    color: rgb(150, 147, 147);
+  }
+}

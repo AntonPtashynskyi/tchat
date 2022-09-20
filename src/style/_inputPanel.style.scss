@@ -1,48 +1,42 @@
 .input-panel {
+  display: flex;
+  justify-content: space-between;
+
+  height: 70px;
+  background-color: rgb(255, 255, 255);
+
+  &__input {
+    border: none;
+    background-color: transparent;
+    padding: 0 20px;
+    width: 80%;
+    color: rgb(37, 36, 36);
+    font-size: 20px;
+
+    &::placeholder {
+      font-size: 16px;
+    }
+  }
+
+  &__additional {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 
-    height: 70px;
-    background-color: rgb(234, 232, 232);
-    margin: 0 -40px;
+    .send-btn {
+      height: 40px;
+      padding: 5px 20px;
+      border: none;
+      background-color: rgb(57, 89, 150);
+      color: #fff;
+      margin-right: 20px;
 
-    &__input {
-        border: none;
-        background-color: transparent;
-        padding: 0 20px;
-        width: 80%;
-        color: rgb(37, 36, 36);
-        font-size: 20px;
+      &:hover {
+        background-color: rgb(42, 66, 111);
+      }
 
-        &::placeholder {
-            font-size: 16px;
-
-        }
+      &:active {
+        background-color: rgb(57, 89, 150);
+      }
     }
-
-    &__additional {
-        display: flex;
-        align-items: center;
-
-
-        .send-btn {
-            height: 40px;
-            padding: 5px 20px;
-            border: none;
-            background-color: rgb(57, 89, 150);
-            color: #fff;
-            margin-right: 20px;
-
-            &:hover {
-                background-color: rgb(42, 66, 111);
-            }
-
-            &:active {
-                background-color: rgb(57, 89, 150);
-            }
-        }
-        
-    }
-
-    
+  }
 }
