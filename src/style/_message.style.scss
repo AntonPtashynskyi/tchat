@@ -10,6 +10,7 @@
   }
   .messageContent {
     align-self: baseline;
+    max-width: 80%;
   }
 
   &__img {
@@ -35,5 +36,16 @@
 
   span {
     color: rgb(150, 147, 147);
+  }
+
+  &.owner {
+    flex-direction: row-reverse;
+
+    p {
+      background-color: #8da4f1;
+      color: #fff;
+      border-radius: 10px 0 10px 10px;
+      margin-right: 10px;
+    }
   }
 }
