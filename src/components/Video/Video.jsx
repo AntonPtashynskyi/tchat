@@ -1,11 +1,9 @@
 import React from "react";
-import { useState } from "react";
+import VideoCard from "./assets/VideoCard";
+
 import "./_video.style.scss";
 
 function Video() {
-  const [show, setShow] = useState(false);
-
-  const showInfo = () => setShow(!show);
   return (
     <div className="container">
       <div className="video-section">
@@ -21,7 +19,14 @@ function Video() {
               <button>Register</button>
             </div>
           </nav>
+          <VideoCard
+            read="Lorem ipsum dolor sit amet consectetur"
+            more="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+            doloremque magni ipsa nisi Lorem ipsum dolor sit amet.lorem5 Lorem
+            ipsum dolor sit amet."
+          />
 
+          {/* 
           <ul className="videoContent">
             <li className={show ? "showInfo" : ""}>
               <div className="cover">
@@ -34,11 +39,8 @@ function Video() {
                 </p>
               </div>
             </li>
-          </ul>
+          </ul> */}
         </div>
-      </div>
-      <div className="text">
-        <div className="content-wrapper"></div>
       </div>
     </div>
   );

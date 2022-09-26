@@ -19,6 +19,7 @@
     max-height: 1200px;
     object-fit: cover;
     background-size: 100%;
+    padding: 0 50px;
     background-repeat: no-repeat;
     background-image: url("./assets/backdrop.jpg");
 
@@ -55,7 +56,7 @@
     }
 
     .videoContent {
-      margin-top: 500px;
+      margin-top: 300px;
       display: flex;
 
       li {
@@ -69,6 +70,10 @@
         background-color: rgba(255, 255, 255, 0.497);
         // overflow: hidden;
         transition: all 250ms ease;
+
+        &:hover {
+          scale: 1.05;
+        }
 
         .cover {
           z-index: 10;
@@ -87,6 +92,7 @@
             right: 7px;
             height: 40px;
             border: none;
+            border-radius: 5px;
           }
         }
 
@@ -103,12 +109,10 @@
           padding: 5px;
           padding-top: 20px;
           text-align: center;
-
-          p {
-          }
         }
 
         &.showInfo {
+          scale: 1.05;
           .videoInfo {
             transform: translateY(90%);
           }
